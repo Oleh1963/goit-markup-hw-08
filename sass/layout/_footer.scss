@@ -5,16 +5,40 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__container_wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .footer__container_position_left {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+    text-align: left;
+  }
 }
 
 .footer__container_position_right {
-  margin-right: 93px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    text-align: left;
+  }
 }
 
 .footer__title {
